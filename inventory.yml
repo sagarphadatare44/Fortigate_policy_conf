@@ -1,0 +1,22 @@
+Inventoty.yml 
+
+all:
+  hosts:
+    ungroup.by.com
+  children:
+    fortigates:
+      hosts:
+        fortigate1:
+			ansible.host: 10.1.1.1
+			ansible.hostname: fortigate1.by.com
+			ansible_httpapi_use_ssl: yes
+			ansible_httpapi_validate_certs: no
+			ansible_httpapi_port: 443
+			
+        fortigate2:
+			ansible.host: 10.1.1.2
+			ansible.hostname: fortigate2.by.com
+			ansible_httpapi_use_ssl: yes
+			ansible_httpapi_validate_certs: no
+			ansible_httpapi_port: 443
+
